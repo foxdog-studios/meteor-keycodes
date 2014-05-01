@@ -22,6 +22,7 @@ KeyCodes = (function () {
   addKeyCode('PAUSE'           ,  19);
   addKeyCode('CAPS_LOCK'       ,  20);
   addKeyCode('ESCAPE'          ,  27);
+  addKeyCode('SPACE'           ,  32);
   addKeyCode('PAGE_UP'         ,  33);
   addKeyCode('PAGE_DOWN'       ,  34);
   addKeyCode('END'             ,  35);
