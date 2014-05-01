@@ -1,6 +1,6 @@
 {
   "name": "keycodes",
-  "description": "Key codes",
+  "description": "Names for event key codes",
   "homepage": "https://github.com/foxdog-studios/meteor-keycodes",
   "author": "Peter Sutton <foxxy@foxdogstudios.com>",
   "version": "0.1.0",
