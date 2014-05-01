@@ -1,5 +1,5 @@
 Package.describe({
-    summary: 'Key codes'
+    summary: 'Names for event key codes'
 });
 
 Package.on_use(function (api) {

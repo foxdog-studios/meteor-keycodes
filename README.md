@@ -1,4 +1,5 @@
 meteor-keycodes
 ===============
 
-Key codes
+Names for event key codes
+
