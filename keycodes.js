@@ -1,4 +1,4 @@
-KeyCodes = (function () {
+KeyCodes = (function (exports) {
   "use strict";
 
   var KeyCodes = Object.create(null);
@@ -115,6 +115,12 @@ KeyCodes = (function () {
   define(221, 'CLOSE_BRACKET'   );
   define(222, 'SINGLE_QUOTE'    );
 
-  return Object.preventExtensions(KeyCodes);
-}());
+  Object.preventExtensions(KeyCodes);
+
+  if (exports) {
+    exports.KeyCodes = KeyCodes
+  }
+
+  return KeyCodes
+}(exports));
 
