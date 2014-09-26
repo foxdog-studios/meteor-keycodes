@@ -24,7 +24,7 @@ Install
 -------
 
 ```Shell
-$ mrt add keycodes
+$ meteor add fds:keycodes
 ```
 
 
