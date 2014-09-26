@@ -1,9 +1,11 @@
 Package.describe({
-    summary: 'Names for event key codes'
+  summary: "Names for event key codes",
+  version: "1.0.0",
+  git: "https://github.com/foxdog-studios/meteor-keycodes"
 });
 
-Package.on_use(function (api) {
-  api.add_files(['keycodes.js']);
-  api.export(['KeyCodes']);
+Package.onUse(function (api) {
+  api.addFiles("keycodes.js", "client");
+  api.export("KeyCodes", "client");
 });
 
