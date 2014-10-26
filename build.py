@@ -50,11 +50,9 @@ def margin(string):
 
 
 SOURCE_TEMPLATE = margin(r'''
-    |KeyCodes = Object.create(null, {{
+    |KeyCodes = Object.freeze(Object.create(null, {{
     |{props}
-    |}});
-    |
-    |Object.preventExtensions(KeyCodes);
+    |}}));
     |
 |''')
 
@@ -69,7 +67,7 @@ PROPERTY_TEMPLATE = margin(r'''
 ''')
 
 TESTS_TEMPLATE = margin(r'''
-    |Tinytest.add('Extension', function(test) {{
+    |Tinytest.add('Freeze', function(test) {{
     |  KeyCodes.extension = 0;
     |  test.isUndefined(KeyCodes.extension);
     |}});

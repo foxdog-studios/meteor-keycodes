@@ -1,7 +1,7 @@
 Package.describe({
   name: 'fds:keycodes',
   summary: 'Names for event key codes',
-  version: '1.0.1',
+  version: '1.0.2',
   git: 'https://github.com/foxdog-studios/meteor-keycodes'
 });
 

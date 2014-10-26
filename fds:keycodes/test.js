@@ -1,4 +1,4 @@
-Tinytest.add('Extension', function(test) {
+Tinytest.add('Freeze', function(test) {
   KeyCodes.extension = 0;
   test.isUndefined(KeyCodes.extension);
 });

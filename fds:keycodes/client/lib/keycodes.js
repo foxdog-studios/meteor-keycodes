@@ -1,4 +1,4 @@
-KeyCodes = Object.create(null, {
+KeyCodes = Object.freeze(Object.create(null, {
   BACKSPACE: {
      value: 8,
      configurable: false,
@@ -659,7 +659,5 @@ KeyCodes = Object.create(null, {
      enumerable: true,
      writable: false
   }
-});
-
-Object.preventExtensions(KeyCodes);
+}));
 
