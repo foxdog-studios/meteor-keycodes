@@ -7,7 +7,7 @@ import sys
 
 def main():
     package = pathlib.Path(__file__).resolve().parent / 'fds:keycodes'
-    source_path = package / 'client' / 'lib' / 'keycodes.js'
+    source_path = package / 'keycodes.js'
 
     props = []
     for keycode, names in KEYCODES:
@@ -50,20 +50,14 @@ def margin(string):
 
 
 SOURCE_TEMPLATE = margin(r'''
-    |KeyCodes = Object.freeze(Object.create(null, {{
+    |KeyCodes = Object.freeze({{
     |{props}
-    |}}));
-    |
+    |}});
 |''')
 
 
 PROPERTY_TEMPLATE = margin(r'''
-    |  {name}: {{
-    |     value: {keycode},
-    |     configurable: false,
-    |     enumerable: true,
-    |     writable: false
-    |  }}
+    |  {name}: {keycode}
 ''')
 
 TESTS_TEMPLATE = margin(r'''
@@ -191,4 +185,3 @@ KEYCODES = [
 
 if __name__ == '__main__':
     sys.exit(main())
-
